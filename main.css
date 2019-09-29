@@ -16,41 +16,60 @@ body {
 
 .navbar {
     background: #0f0f0f;
-   padding: 5px;
+
+    
 }
 
-.navbar-inner {
-    padding-top: 10px;
-    padding-right: 10px;
+.header-Start{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 22px; 
+    letter-spacing: .02em;
+    line-height: 1em;
+    text-transform: none;
+    color: #fff;
 }
 
-.top-left {
-    justify-content: flex-start;
-    text-align: left;
+
+
+.header-Center{
+    max-width: 40em;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: 0em;
+    line-height: 1em;
+    text-transform: none;
+    color:#fff;
 }
 
-.top-center {
-
-}
-.top-right {
-
+.header-End {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: .05em;
+    text-transform: lowercase;
+    color:#fff;
 }
 
 .parallax-wrapper {
     width: 100vw;
     height: 100vh;
     padding-top: 20vh;
-    box-sizing: border-box;
-    
-   
+    box-sizing: border-box; 
 }
 .parallax-wrapper::before{
     content: "";
     width: 100vw;
     height: 100vh;
-    top:0;
+    background-size: contain;
+     background-repeat: no-repeat;
+    top:10px;
     left: 0;
-    background-image: url("/trianglify.png");
+    background-image: url("/VladBackground.jpg");
     position: absolute;
     z-index: -1;
     transform: translateZ(-1px)scale(2);
@@ -59,14 +78,36 @@ body {
 width: 100vw;
 height: 100vh;
 padding-top: 20vh;
-background-image: url("/trianglify2.png");
+background-size: 100% 100%;
+background-image:url("/blank.jpg");
 z-index: 2;
 position: relative;
 }
 
-.content {
-    margin: 0 auto;
-    padding: 50px;
-    width: 50%;
-    background: #aaa;
+.parallax-wrapper2 {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20vh;
+    box-sizing: border-box; 
 }
+
+.parallax-wrapper2::before{
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+     background-repeat: no-repeat;
+    /* top:10px; */
+    left: 0;
+    background-image: url("/bangbangbar.jpg");
+    position: absolute;
+    z-index: -1;
+    transform: translateZ(-1px)scale(2);
+}
+
+.first-Section{
+    padding: 25px;
+text-align: center;
+color: #fff;
+}
+

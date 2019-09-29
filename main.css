@@ -14,6 +14,36 @@ body {
     overflow-y: auto;
 }
 
+footer{
+    background: #0f0f0f;
+}
+
+.contact {
+    position: relative;
+    align-items: center;
+
+  }
+  .contact .social-links {
+    left: 0;
+  }
+  .contact a {
+    border-bottom: 0;
+    color: #342d33;
+    font-size: 1.728em;
+    margin-right: 1.2em;
+    padding-bottom: 0;
+  }
+  .contact a i {
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+  }
+  .contact a:hover i {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
 .navbar {
     background: #0f0f0f;
 
@@ -55,54 +85,50 @@ body {
     color:#fff;
 }
 
-.parallax-wrapper {
-    width: 100vw;
-    height: 100vh;
-    padding-top: 20vh;
-    box-sizing: border-box; 
-}
-.parallax-wrapper::before{
-    content: "";
-    width: 100vw;
-    height: 100vh;
-    background-size: contain;
-     background-repeat: no-repeat;
-    top:10px;
-    left: 0;
-    background-image: url("/VladBackground.jpg");
-    position: absolute;
-    z-index: -1;
-    transform: translateZ(-1px)scale(2);
-}
+
+
 .regular-wrapper {
 width: 100vw;
 height: 100vh;
 padding-top: 20vh;
-background-size: 100% 100%;
+background-size: 100%;
 background-image:url("/blank.jpg");
 z-index: 2;
 position: relative;
 }
 
-.parallax-wrapper2 {
+
+
+
+.parallax-wrapper-first, .parallax-wrapper-second, .parallax-wrapper-third{
     width: 100vw;
     height: 100vh;
     padding-top: 20vh;
     box-sizing: border-box; 
 }
 
-.parallax-wrapper2::before{
+.parallax-wrapper-first::before, .parallax-wrapper-second::before, .parallax-wrapper-third::before{
     content: "";
     width: 100vw;
     height: 100vh;
-    background-size: contain;
+    background-size: 100%;
      background-repeat: no-repeat;
     /* top:10px; */
     left: 0;
-    background-image: url("/bangbangbar.jpg");
     position: absolute;
     z-index: -1;
     transform: translateZ(-1px)scale(2);
+}
+.parallax-wrapper-first::before{
+    background-image: url("/VladBackground.jpg");
+}
+
+.parallax-wrapper-second::before{
+    background-image: url("/bangbangbar.jpg");
+}
+
+.parallax-wrapper-third::before{
+    background-image: url("/bladerunner.jpg"); 
 }
 
 .first-Section{

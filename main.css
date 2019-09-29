@@ -1,5 +1,7 @@
 html {
     overflow: hidden;
+    scroll-behavior: smooth;
+      
 
 }
 body {
@@ -46,8 +48,10 @@ footer{
 
 .navbar {
     background: #0f0f0f;
+}
 
-    
+.paddingInitial {
+    padding-top: 100px;
 }
 
 .header-Start{
@@ -89,12 +93,13 @@ footer{
 
 .regular-wrapper {
 width: 100vw;
-height: 100vh;
-padding-top: 20vh;
+padding-top: 10vh;
+padding-bottom: 10vh;
 background-size: 100%;
 background-image:url("/blank.jpg");
 z-index: 2;
 position: relative;
+margin-left: -15px;
 }
 
 
@@ -130,10 +135,17 @@ position: relative;
 .parallax-wrapper-third::before{
     background-image: url("/bladerunner.jpg"); 
 }
+.centerTitle {
+    margin-right: auto; 
+     margin-left: auto;
+     padding-bottom: 50px;
+}
 
 .first-Section{
     padding: 25px;
 text-align: center;
 color: #fff;
 }
+
+
 

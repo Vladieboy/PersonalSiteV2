@@ -29,9 +29,10 @@
                 Web Developer
             </div>
             <div class="col-4 header-End">
-                bio
-                projects
-                contact
+                <a href="#bio">bio</a>
+                <a href="#projects">projects</a>
+                <a href="#contact">contact</a>
+             
             </div>
         </div>
 
@@ -41,11 +42,11 @@
 
         <div>
             <div class="parallax-wrapper-first">
-                <div class="container">
-                    <div class="row">
+                <div class="container-flex paddingInitial">
+                    <div class="row pt-5">
                         <div class="col-3"></div>
-                        <div class="col-6">
-                            <h2 class="first-Section">
+                        <div class="col-6 pt-5">
+                            <h2 class="first-Section pt-5">
                                 👋
                                 <br>
                                 Hey, fancy running you here.
@@ -63,36 +64,49 @@
 
             </div>
             <div class="regular-wrapper">
-                <div class="container">
+                <div class="container" id="bio">
                     <div class="row">
                         <div class="col-4">
-                            <h2>
-                                I started coding in December of 2018 and found that I truly enjoyed doing something for
-                                the first time in pretty much ever.
-                                Since then, I've learned a lot but, man, there's so much more to learn.
-                            </h2>
+                            <h3>
+                                <p>
+                                    I started coding in December of 2018 📅 where I discovered something that I truly
+                                    enjoyed doing something for
+                                    the first time in pretty much ever.
+                                </p>
+                                <p>
+                                    Since then, I've learned a lot but, man, there's so much more to learn.
+                                </p>
+                            </h3>
                         </div>
                     </div>
                     &nbsp;
                     <div class="row">
                         <div class="col-8"></div>
                         <div class="col-4">
-                            <h2>
-                                Formerly of Good Dog, a social condtioning app for dog-owners.
-                                Currently I work for Kukdong, developing a leave-management web application for internal
-                                use.
-                            </h2>
+                            <h3>
+                                <p>
+                                    Formerly of <strong>Good Dog</strong>, a social condtioning app for dog-owners.
+                                </p>
+                                <p>
+                                    Currently I work for <strong>Kukdong</strong>, developing a leave-management web
+                                    application for internal
+                                    use.
+                                </p>
+                            </h3>
                         </div>
                     </div>
                     &nbsp;
                     <div class="row">
                         <div class="col-4"></div>
                         <div class="col-4">
-                            <h2>
-                                What else 🤔
-                                I really like professional wrestling, horror movies, true-crime & paranormal stuff, and
-                                talking politics.
-                            </h2>
+                            <h3>
+                                <p>What else 🤔</p>
+                                <p>
+                                    I really like professional wrestling, horror movies, true-crime & paranormal stuff,
+                                    and
+                                    talking politics.
+                                </p>
+                            </h3>
                         </div>
                     </div>
                 </div>
@@ -104,11 +118,11 @@
                 </div>
             </div>
             <div class="regular-wrapper">
-                <div class="container">
+                <div class="container" id="projects">
                     <div class="row">
-                        <h2>
-                            Features and things I've made
-                        </h2>
+                        <h1 class="centerTitle">
+                            Features & things I've made
+                        </h1>
                         &nbsp;
                         <div class="container">
                             <div class="row">
@@ -202,34 +216,34 @@
                 </div>
             </div>
             <div class="parallax-wrapper-third">
-
             </div>
             <div class="regular-wrapper">
+                <div class="row justify-content-md-center" id="contact">
 
-            </div>
-
-            <div>
-                <div class="row justify-content-md-center">
-                    
-                <div class="contact">
-                    <div class="social-links">
-                        <a href="http://www.instagram.com/baron_v_lad" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="http://www.github.com/Vladieboy" target="_blank"><i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/vladtikunov/" target="_blank">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="mailto:vlad.tikunov@gmail.com?Subject==What's Up 👻" target="_top">
-                            <i class="fa fa-envelope"></i>
-                        </a>
+                    <div class="contact">
+                        <div class="social-links">
+                            <a href="http://www.instagram.com/baron_v_lad" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="http://www.github.com/Vladieboy" target="_blank"><i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/vladtikunov/" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:vlad.tikunov@gmail.com?Subject==What's Up 👻" target="_top">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            </div>
         </div>
-
+<script>
+const scrollToFunction = (id) => {
+    var elmnt = document.getElementById(id);
+  elmnt.scrollIntoView();
+} 
+</script>
 </body>
 
 </html>

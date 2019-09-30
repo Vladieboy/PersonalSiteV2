@@ -1,9 +1,12 @@
 html {
     overflow: hidden;
     scroll-behavior: smooth;
-      
-
 }
+
+p {
+    margin-bottom: 1.5rem !important;
+}
+
 body {
     margin: 0;
     font-size: 26px;
@@ -19,6 +22,8 @@ body {
 footer{
     background: #0f0f0f;
 }
+
+
 
 .contact {
     position: relative;
@@ -48,6 +53,7 @@ footer{
 
 .navbar {
     background: #0f0f0f;
+    min-height: 6%;
 }
 
 .paddingInitial {
@@ -112,6 +118,16 @@ margin-left: -15px;
     box-sizing: border-box; 
 }
 
+@media screen and (max-width:600px) {
+.parallax-wrapper-first::before, .parallax-wrapper-second::before, .parallax-wrapper-third::before {
+    background-size: auto !important;
+}
+
+.paddingInitial {
+    padding-top: 0px !important;
+}
+}
+
 .parallax-wrapper-first::before, .parallax-wrapper-second::before, .parallax-wrapper-third::before{
     content: "";
     width: 100vw;
@@ -148,4 +164,8 @@ color: #fff;
 }
 
 
-
+@media screen and (max-width:1200px) {
+    .paddingInitial {
+        padding-top: 0px !important;
+    }
+}

@@ -102,7 +102,7 @@ width: 100vw;
 padding-top: 10vh;
 padding-bottom: 10vh;
 background-size: 100%;
-background-image:url("/blank.jpg");
+background-image:url("/public/blank.jpg");
 z-index: 2;
 position: relative;
 margin-left: -15px;
@@ -141,11 +141,11 @@ margin-left: -15px;
     transform: translateZ(-1px)scale(2);
 }
 .parallax-wrapper-first::before{
-    background-image: url("/VladBackground.jpg");
+    background-image: url("/public/VladBackground.jpg");
 }
 
 .parallax-wrapper-second::before{
-    background-image: url("/bangbangbar.jpg");
+    background-image: url("/public/bangbangbar.jpg");
 }
 
 .parallax-wrapper-third::before{
